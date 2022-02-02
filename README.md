@@ -24,9 +24,9 @@ CREATE DATABASE dezzer;
 
 *Criar uma tabela*
 ```
-CREATE TABLE musica (
-   id int primary key,
-   nome_musica text
+CREATE TABLE 'musica' (
+   'id' INT PRIMARY KEY,
+   'nome_musica' TEXT
 );
 ```
 
@@ -51,6 +51,18 @@ COMMIT;
 *Desfaz as mudanças voltando até o último commit*
 ```
 ROLLBACK;
+```
+
+## Comandos de alteração
+
+*Alterar tabela adicionando um atributo*
+```
+ALTER TABLE 'musica' ADD 'tempo' TIME;
+```
+
+*Alterar tabela removendo um atributo*
+```
+ALTER TABLE 'musica' DROP 'tempo';
 ```
 
 
