@@ -1,0 +1,32 @@
+# Estudo sobre a linguagem SQL aplicada ao MySQL
+
+Esse repositório é para registrar comandos SQL para manipulação de dados em banco de dados relacionais. 
+O intuito desse registro também é oferecer uma fonte de consulta para a comunidade.
+
+## Database de exemplo
+
+**database:** dezzer
+
+**tabela:** musica
+
+**exemplo da tabela**
+
+| id | nome_musica |
+|---:|-------------|
+| 1  | Pais e filhos |
+
+## Comandos de criação
+
+*Criar um banco de dados*
+```
+CREATE DATABASE dezzer;
+```
+
+*Criar uma tabela*
+```
+CREATE TABLE musica (
+   id int primary key,
+   nome_musica text
+)
+```
+
