@@ -27,6 +27,31 @@ CREATE DATABASE dezzer;
 CREATE TABLE musica (
    id int primary key,
    nome_musica text
-)
+);
 ```
+
+## Comandos de controle de transação
+
+*Alternar o auto commit para ligado e desligado*
+```
+SET AUTOCOMMIT = 0; -- desligado
+SET AUTOCOMMIT = 1; -- ligado
+```
+
+*Inicia o controle de transação, as mudanças só serão salvas se for feito um commit*
+```
+START TRANSACTION;
+```
+
+*Salva as mudanças no banco de dados*
+```
+COMMIT;
+```
+
+*Desfaz as mudanças voltando até o último commit*
+```
+ROLLBACK;
+```
+
+
 
